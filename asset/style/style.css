@@ -3,18 +3,22 @@
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
-    color: #8c8c8c;
+    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
+}
+body{
+    background: #f5f7fa;
+    display: flex;
 }
 
 
 /* ###########Navbar############ */
 
-#side-nav{
-    position: absolute;
+#side-nav {
+    position: relative;
     left: 0;
     width: 20%;
-    height: 100%;
+    height: 100vh;
     background: #fff;
     border: 20px solid #fff;
     box-sizing:border-box;
@@ -48,16 +52,50 @@
 /* ###########Main Content############ */
 
 #main{
-    position: absolute;
-    right: 0;
+    box-sizing: border-box;
+    position: relative;
     width: 80%;
-    height: 100%;
+    height: 100vh;
     background: #f5f7fa;
     box-sizing:border-box;
+    display: flex;
+    border:15px solid rgba(0,0,0,0);
 }
-.clear{
-    clear: both;
+.konten{
+    padding: 15px;
+    box-sizing: border-box;
 }
-.float{
+.kontenPertama{
+    position: absolute;
+    display: inline;
     float: left;
+    width: 100%;
+    background: #fff;
+}
+.kontenPertama table{
+    width: 100%;
+}
+.kontenPertama td, .kontenPertama th{
+    padding: 5px;
+}
+.kontenPertama tr >td:first-child{
+    text-align: center;
+}
+.kontenPertama table, .kontenPertama td, .kontenPertama tr, .kontenPertama th{
+    /* border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-right: 2px;
+    border-top: 2px; */
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+    text-align: left;
+}
+.simbolStatus{
+    position: relative;
+    left: 50;
+    transform: rotateX(180);
+}
+.simbolStatus img{
+    height: 15px;
+    width: 15px;
 }
