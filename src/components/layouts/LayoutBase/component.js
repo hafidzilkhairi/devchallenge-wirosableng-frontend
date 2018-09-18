@@ -10,8 +10,9 @@ import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
-import { mailFolderListItems, otherMailFolderListItems } from './tileData';
-import img from './codex-logo.png'
+import { mailFolderListItems} from './tileData';
+import { logos} from './logo';
+
 export default class Component extends React.Component {
   state = {
     anchor: 'left',
@@ -24,9 +25,9 @@ export default class Component extends React.Component {
   };
 
   render() {
-    const { classes } = this.props;
+    // const { classes } = this.props;
     const { anchor } = this.state;
-
+    const { children, classes } = this.props;
     const drawer = (
       <Drawer
         variant="permanent"
@@ -35,13 +36,11 @@ export default class Component extends React.Component {
         }}
         anchor={anchor}
       >
-        <img src={logo} alt="logo"></img>
+        {/* <img src={logo} alt="logo"></img> */}
         <div className={classes.toolbar} />
-       
+       {logos}
         <Divider />
         <List>{mailFolderListItems}</List>
-        <Divider />
-        <List>{otherMailFolderListItems}</List>
       </Drawer>
     );
 
@@ -81,7 +80,7 @@ export default class Component extends React.Component {
           {before}
           <main className={classes.content}>
             <div className={classes.toolbar} />
-            <Typography>{'You think water moves fast? You should see ice.'}</Typography>
+            {children}
           </main>
           {after}
         </div>

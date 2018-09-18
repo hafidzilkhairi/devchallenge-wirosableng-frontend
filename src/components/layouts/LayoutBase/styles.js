@@ -6,12 +6,14 @@ const styles = theme => ({
     flexGrow: 1,
   },
   appFrame: {
-    height: 440,
+    // height: 800,
     zIndex: 1,
     overflow: 'hidden',
     position: 'relative',
     display: 'flex',
     width: '100%',
+    height: "100%",
+    
   },
   appBar: {
     width: `calc(100% - ${drawerWidth}px)`,
@@ -33,6 +35,5 @@ const styles = theme => ({
     padding: theme.spacing.unit * 3,
   },
 });
-
 
 export default styles;
