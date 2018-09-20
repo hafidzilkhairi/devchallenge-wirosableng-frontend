@@ -70,36 +70,8 @@ export default class Component extends React.Component {
     return (
         <LayoutBase>
            <Paper className={classes.root}>
-      <Heading text="Que All Projects"></Heading>
-      <Table className={classes.table2}>
-        <TableHead>
-          <TableRow>
-            <CustomTableCell numeric>No</CustomTableCell>
-            <CustomTableCell>Nama Project</CustomTableCell>
-            <CustomTableCell>Unit</CustomTableCell>
-            <CustomTableCell>Stakeholder</CustomTableCell>
-            <CustomTableCell numeric>Sprint</CustomTableCell>
-            <CustomTableCell>Status</CustomTableCell>
-          
-          </TableRow>
-        </TableHead>
-        <TableBody>
-        {datamhs.map((i, v) => {
-            return (
-             <TableRow key="">
-           
-              <CustomTableCell numeric>{i.nim} </CustomTableCell>
-              <CustomTableCell >{i.name} </CustomTableCell>
-              <CustomTableCell >{i.address} </CustomTableCell>
-              <CustomTableCell numeric>{i.nim} </CustomTableCell>
-              <CustomTableCell numeric>{i.nim} </CustomTableCell>
-              <CustomTableCell numeric>{i.nim} </CustomTableCell>
-              </TableRow>
-            );
-          })}
-          
-        </TableBody>
-      </Table>
+      <Heading text="Date"></Heading>
+      
     </Paper>
           
         <Paper className={classes.table1_width}>
@@ -128,37 +100,7 @@ export default class Component extends React.Component {
               at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
               sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum
               nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-              et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras
-              mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-              lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla
-              sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-              Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis
-              consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-              lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla
-              sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-              Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis
-              consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-              lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla
-              sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-              Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis
-              consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-              lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla
-              sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-              Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis
-              consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-              lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla
-              sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-              Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+              et. Donec sed odio dui. Donec ullamcorper 
             </DialogContentText>
           </DialogContent>
           <DialogActions>

@@ -5,14 +5,11 @@ const styles = theme => ({
     overflowX: 'auto',
   },
   table1_width: {
-    width: '32.3%',
+    width: '40%',
     float: 'right',
     marginTop: theme.spacing.unit * 3,
     overflowX: 'auto',
-    minHeight: '300px',
-    marginRight : '5px',
-    marginLeft : '5px'
-
+    minHeight: '300px'
   },
   select_width: {
     width: '60%',
@@ -24,7 +21,6 @@ const styles = theme => ({
   },
   table1: {
     maxWidth: 200,
-    minWidth: 200,
   },
   table2: {
     minWidth: 700,
